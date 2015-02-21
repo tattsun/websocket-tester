@@ -22,4 +22,6 @@ body {
 .timestamp {
     color: #aaaaaa;
     font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
 }
