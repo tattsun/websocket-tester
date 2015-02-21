@@ -1,0 +1,25 @@
+body {
+    font-size: 13px;
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.text-system {
+    color: #4682b4;
+    font-style: italic;
+}
+
+.text-server {
+    font-weight: bold;
+}
+
+.timestamp {
+    color: #aaaaaa;
+    font-size: 12px;
+}

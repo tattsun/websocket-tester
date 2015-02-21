@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>WebSocket Tester</title>
+    <link href="./main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>WebSocket Tester</h1>
+    <div id="main">
+      <div id="url-form">
+        URL: <input type="text" v-model="url">
+        <input type="button" value="Connect" v-on="click : connect">
+      </div>
+      <div id="send-form" class="{{isopen ? 'visible' : 'hidden' }}">
+        SEND: <input type="text" v-model="sendmsg">
+        <input type="button" value="Send" v-on="click : send">
+      </div>
+
+      <div v-repeat="messages" class="text-{{type}}">
+        {{type}}:
+        {{message}}
+        <span class="timestamp">
+          ({{timestamp}})
+        </span>
+      </div>
+    </div>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/0.11.5/vue.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
