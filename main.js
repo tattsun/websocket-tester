@@ -54,6 +54,7 @@ var main = new Vue({
                 timestamp: getNow()
             });
             self.ws.send(self.sendmsg);
+            self.sendmsg = "";
         }
     }
 });
